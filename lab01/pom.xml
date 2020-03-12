@@ -11,6 +11,7 @@
     <modules>
         <module>authcode-server</module>
         <module>implicit-server</module>
+        <module>password-server</module>
     </modules>
 
     <parent>
