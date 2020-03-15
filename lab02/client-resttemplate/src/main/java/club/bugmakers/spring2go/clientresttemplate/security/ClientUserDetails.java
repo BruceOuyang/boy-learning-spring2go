@@ -12,8 +12,7 @@ import java.util.HashSet;
 
 @Data
 @AllArgsConstructor
-public class ClientUserDetails implements UserDetails, Serializable {
-    private static final long serialVersionUID = -2561349666741181541L;
+public class ClientUserDetails implements UserDetails {
 
     private ClientUser clientUser;
 

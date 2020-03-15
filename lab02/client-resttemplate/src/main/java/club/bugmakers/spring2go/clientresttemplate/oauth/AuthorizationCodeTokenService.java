@@ -29,7 +29,7 @@ public class AuthorizationCodeTokenService {
         Map<String, String> authParameters = new HashMap<>();
         authParameters.put("client_id", "bruce");
         authParameters.put("response_type", "code");
-        authParameters.put("redirect_uri", getEncodedUrl("http://localhost:8081/callback"));
+        authParameters.put("redirect_uri", getEncodedUrl("http://localhost:9001/callback"));
         authParameters.put("scope", "read_userinfo");
         return buildUrl(endpoint, authParameters);
     }
@@ -39,7 +39,7 @@ public class AuthorizationCodeTokenService {
         params.forEach((key, value) -> {
             paramList.add(key + "=" + value);
         });
-        return endpoint + "?" + paramList.stream().reduce((a, b) -> a + "&" + b);
+        return endpoint + "?" + paramList.stream().reduce((a, b) -> a + "&" + b).get();
     }
 
     private String getEncodedUrl(String url) {
