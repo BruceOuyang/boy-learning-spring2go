@@ -1,4 +1,4 @@
-package club.bugmakers.spring2go.clientresttemplate.bean.dto;
+package club.bugmakers.spring2go.clientresttemplate.oauth;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
@@ -6,7 +6,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class OAuth2TokenDTO implements Serializable {
+public class OAuth2Token implements Serializable {
 
     private static final long serialVersionUID = 2888280729681499784L;
 

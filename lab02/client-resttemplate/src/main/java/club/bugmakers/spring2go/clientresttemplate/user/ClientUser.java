@@ -1,17 +1,15 @@
-package club.bugmakers.spring2go.clientresttemplate.bean.po;
+package club.bugmakers.spring2go.clientresttemplate.user;
 
-import club.bugmakers.spring2go.clientresttemplate.bean.bo.EntryBO;
 import lombok.Data;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-import java.util.Map;
 
 @Entity
 @Data
-public class ClientUserPO {
+public class ClientUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,5 +26,5 @@ public class ClientUserPO {
     private String refreshToken;
 
     @Transient
-    private List<EntryBO> entries = new ArrayList<>();
+    private List<Entry> entries = new ArrayList<>();
 }
