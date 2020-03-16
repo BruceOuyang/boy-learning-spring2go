@@ -1,6 +1,5 @@
 package club.bugmakers.spring2go.clientresttemplate.user;
 
-import club.bugmakers.spring2go.clientresttemplate.user.ClientUser;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;
